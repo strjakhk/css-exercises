@@ -22,10 +22,12 @@ html {
 
 .header {
   background-color: #006157;
+  grid-column: 1 / -1;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-row: 2 / -2;
 }
 
 .nav {
@@ -38,6 +40,7 @@ html {
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / -1;
 }
 
 .article p {
@@ -46,3 +49,11 @@ html {
   color: white;
   text-align: left;
 }
+
+.container{
+  display: grid;
+  grid-template-rows: 100px 100px 500px 100px;
+  grid-template-columns: 300px 900px;
+  gap: 15px;
+}
+
